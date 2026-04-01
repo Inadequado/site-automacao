@@ -414,4 +414,47 @@ a {
   .menu-mobile {
     display: flex;
   }
+
+  .main-text {
+    padding-top: 10rem;
+  }
+
+  .div-btn {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .phone-anim {
+    position: relative;
+    width: 80%;
+    height: 100%; /* altura fixa para acomodar os dois celulares */
+    transform: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .phone1-wrapper {
+    transform: none;
+    width: 70%;
+    padding-top: 50%;
+  }
+
+  .phone2-wrapper {
+    top: 75%;
+    left: 70%;
+    width: 70%;
+  }
+
+  .bubble-wrapper {
+    top: 0%;
+    left: 50%;
+    width: 40%;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    padding-bottom: 60px;
+  }
 }
