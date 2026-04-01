@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./menu.css";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home, Layers, Lightbulb, Mail } from "lucide-react";
 import logo from "./../assets/logo.png";
 
 const menuItems = [
-  { label: "Home", href: "#hero" },
-  { label: "Planos", href: "#planos" },
-  { label: "Soluções", href: "#solucoes" },
-  { label: "Contato", href: "#contato" },
+  { icon: <Home />, label: "Home", href: "#hero" },
+  { icon: <Layers />, label: "Planos", href: "#planos" },
+  { icon: <Lightbulb />, label: "Soluções", href: "#solucoes" },
+  { icon: <Mail />, label: "Contato", href: "#contato" },
 ];
 
 export function MenuMobile() {
@@ -38,12 +38,12 @@ export function MenuMobile() {
       >
         <Menu
           color="white"
-          size={35}
+          size={40}
           className={`icon ${isOpen && !isClosing ? "icon-hidden" : "icon-visible"}`}
         />
         <X
           color="white"
-          size={35}
+          size={40}
           className={`icon ${isOpen && !isClosing ? "icon-visible" : "icon-hidden"}`}
         />
       </button>
@@ -63,6 +63,7 @@ export function MenuMobile() {
             style={{ animationDelay: `${index * 80}ms` }}
             onClick={handleLinkClick}
           >
+            {item.icon}
             {item.label}
           </a>
         ))}

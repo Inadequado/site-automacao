@@ -10,7 +10,8 @@
 }
 
 .mobile-logo {
-  padding-top: 10px;
+  -webkit-tap-highlight-color: transparent;
+  padding-top: 15px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -56,6 +57,7 @@
 .mobile-menu {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   position: absolute;
   top: 45px;
   left: 0;
@@ -80,17 +82,31 @@
 /* Itens */
 .menu-item {
   -webkit-tap-highlight-color: transparent;
-  background: grey;
-  display: block;
-  padding: 14px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  font-weight: 500;
+  letter-spacing: 0.05em; /* leve espaçamento entre letras */
   margin: 4px 16px;
-  border-radius: 15px;
+  border-radius: 50px; /* mais arredondado, estilo pill */
 
-  /* Estado inicial (antes de animar) */
+  /* Fundo com leve transparência */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px); /* efeito glass */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  /* Sombra mais suave */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+
+  /* Hover suave */
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+
   opacity: 0;
   transform: translateY(-12px);
 }
