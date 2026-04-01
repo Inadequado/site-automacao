@@ -8,9 +8,9 @@ export function Header() {
   const lastScrollY = useRef(0);
   const scrollUpAccumulated = useRef(0);
 
-  function toggleMenu() {
-    setMenuAberto(!menuAberto);
-  }
+  // function toggleMenu() {
+  //   setMenuAberto(!menuAberto);
+  // }
 
   useEffect(() => {
     lastScrollY.current = window.scrollY;
