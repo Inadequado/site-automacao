@@ -55,12 +55,11 @@ export function MenuMobile() {
       <nav
         className={`mobile-menu ${isOpen ? "visible" : ""} ${isClosing ? "closing" : ""}`}
       >
-        {menuItems.map((item, index) => (
+        {menuItems.map((item) => (
           <a
             key={item.href}
             href={item.href}
             className="menu-item"
-            style={{ animationDelay: `${index * 80}ms` }}
             onClick={handleLinkClick}
           >
             {item.icon}
