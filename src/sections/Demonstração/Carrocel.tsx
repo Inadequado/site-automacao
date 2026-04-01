@@ -8,37 +8,61 @@ import redSad from "../../assets/sad.svg";
 const items = [
   {
     type: "smile",
-    text: "Primeiro texto FELIZ",
+    text: "Site próprio da barbearia personalizado com sua marca, logo e link para agendamento.",
     icon: smileGreen,
     alt: "Ícone sorrindo",
   },
   {
     type: "sad",
-    text: "Primeiro texto TRISTE",
+    text: "Perguntas frequentes cobrando respostas imediatas a todo momento.",
     icon: redSad,
     alt: "Ícone triste",
   },
   {
     type: "smile",
-    text: "Segundo texto FELIZ",
+    text: "Atendimento automático que responde por você enquanto está ocupado",
     icon: smileGreen,
     alt: "Ícone sorrindo",
   },
   {
     type: "sad",
-    text: "Segundo texto TRISTE",
+    text: "Reagendar e cancelar manualmente vira troca de mensagens bagunçando toda sua agenda.",
     icon: redSad,
     alt: "Ícone triste",
   },
   {
     type: "smile",
-    text: "Terceiro texto FELIZ",
+    text: "Agendamentos confirmados com informações detalhadas.",
     icon: smileGreen,
     alt: "Ícone sorrindo",
   },
   {
     type: "sad",
-    text: "Terceiro texto TRISTE",
+    text: "Agenda bagunçada com confusão de horários e correção toda hora.",
+    icon: redSad,
+    alt: "Ícone triste",
+  },
+  {
+    type: "smile",
+    text: "Serviços e preços claros no site e no Whatsapp para o cliente.",
+    icon: smileGreen,
+    alt: "Ícone sorrindo",
+  },
+  {
+    type: "sad",
+    text: "Atendimento lento e aumentando o tempo de decisão do cliente e criando resistência.",
+    icon: redSad,
+    alt: "Ícone triste",
+  },
+  {
+    type: "smile",
+    text: "Agenda sempre sincronizada e conferida antes de marcar horários.",
+    icon: smileGreen,
+    alt: "Ícone sorrindo",
+  },
+  {
+    type: "sad",
+    text: "placeholder",
     icon: redSad,
     alt: "Ícone triste",
   },
@@ -93,6 +117,10 @@ export function Carrocel() {
 
   return (
     <section id="demonstracao">
+      <div className={styles.titleCarousel}>
+        <h1>A fórmula certa com processo inteligente</h1>
+        <p>tudo flui, tudo se encaixa.</p>
+      </div>
       {/* PRIMEIRA LINHA */}
       <div className={styles.embla}>
         <div className={styles.emblaViewportLeft} ref={emblaRefLeft}>

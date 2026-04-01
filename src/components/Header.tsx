@@ -52,49 +52,41 @@ export function Header() {
 
   return (
     <header className={`header ${showHeader ? "header-show" : "header-hide"}`}>
-      <div className="container header-content">
-        <div className="logo-btn">
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-              setMenuAberto(false);
-            }}
-          >
-            <img src={logo} alt="Logo" />
-          </a>
-        </div>
+      <div className="menu-web">
+        <div className="container header-content">
+          <div className="logo-btn">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                setMenuAberto(false);
+              }}
+            >
+              <img src={logo} alt="Logo" />
+            </a>
+          </div>
 
-        <button className="menu-toggle" onClick={toggleMenu}>
-          {menuAberto ? "✕" : "☰"}
-        </button>
+          <nav className="nav">
+            <a id="home-btn" href="#home">
+              HOME
+            </a>
+            <a id="plan-btn" href="#planos">
+              PLANOS
+            </a>
+            <a id="solution-btn" href="#solucoes">
+              SOLUÇÕES
+            </a>
+          </nav>
 
-        <nav className={`nav ${menuAberto ? "open" : ""}`}>
-          <a id="home-btn" href="#home" onClick={() => setMenuAberto(false)}>
-            HOME
-          </a>
-          <a id="plan-btn" href="#planos" onClick={() => setMenuAberto(false)}>
-            PLANOS
-          </a>
-          <a
-            id="solution-btn"
-            href="#solucoes"
-            onClick={() => setMenuAberto(false)}
-          >
-            SOLUÇÕES
-          </a>
-          <a id="cont-btn" href="#contato" className="contact-btn mobile">
-            CONTATO
-          </a>
-        </nav>
-
-        <div className="btn-right">
-          <a href="#" className="contact-btn">
-            CONTATO
-          </a>
+          <div className="btn-right">
+            <a href="#" className="contact-btn">
+              CONTATO
+            </a>
+          </div>
         </div>
       </div>
+      <div className="menu-mobile"></div>
     </header>
   );
 }

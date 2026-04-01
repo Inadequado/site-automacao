@@ -85,10 +85,6 @@ a {
   transition: all 0.8s ease;
 }
 
-.contact-btn.mobile {
-  display: none;
-}
-
 .nav {
   display: flex;
   gap: 33%;
@@ -220,6 +216,8 @@ a {
 .hero-scrolled {
   border-bottom-left-radius: 75px;
   border-bottom-right-radius: 75px;
+  box-shadow: inset 0 -4px 10px rgba(211, 211, 211, 0.753);
+
   width: 80%;
 }
 
@@ -340,6 +338,10 @@ a {
   filter: brightness(1.15);
 }
 
+.menu-mobile {
+  display: none;
+}
+
 @keyframes borderGloss {
   0% {
     background-position: 0% 20%;
@@ -395,9 +397,9 @@ a {
 
   .logo-btn {
     display: block;
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    position: relative;
+    top: -80%;
+    left: 84%;
   }
 
   .logo-btn img {
@@ -405,93 +407,11 @@ a {
     height: auto;
   }
 
-  .menu-toggle {
-    -webkit-tap-highlight-color: transparent;
-    color: white;
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1051;
-    border-style: groove;
-    border-color: darkgray;
-  }
-
-  .contact-btn,
-  .btn-right {
+  .menu-web {
     display: none;
   }
 
-  .contact-btn.mobile {
+  .menu-mobile {
     display: flex;
-  }
-
-  .nav {
-    -webkit-tap-highlight-color: transparent;
-    position: fixed;
-    top: -230%;
-    right: 5%;
-    width: 75%;
-    max-width: 320px;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 3px;
-
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    transition:
-      transform 0.35s ease,
-      opacity 0.35s ease,
-      visibility 0.35s ease;
-    z-index: 1050;
-  }
-
-  .nav.open {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  #home-btn {
-    background-color: grey;
-    padding: 3px 5px;
-    border-style: groove;
-    border-color: darkgray;
-    border-radius: 10px;
-  }
-
-  #plan-btn {
-    background-color: grey;
-    padding: 3px 5px;
-    border-style: groove;
-    border-color: darkgray;
-    border-radius: 10px;
-  }
-
-  #solution-btn {
-    background-color: grey;
-    padding: 3px 5px;
-    border-style: groove;
-    border-color: darkgray;
-    border-radius: 10px;
-  }
-
-  #cont-btn {
-    border: groove darkgray;
-    background-color: grey;
-    padding: 3px 5px;
-    border-radius: 10px;
-  }
-
-  .nav a {
-    font-size: 1rem;
   }
 }
