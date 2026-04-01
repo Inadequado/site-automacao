@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./menu.css";
-import { Menu, X, Home, Layers, Lightbulb, Mail } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logo from "./../assets/logo.png";
 
 const menuItems = [
-  { icon: <Home />, label: "Home", href: "#hero" },
-  { icon: <Layers />, label: "Planos", href: "#planos" },
-  { icon: <Lightbulb />, label: "Soluções", href: "#solucoes" },
-  { icon: <Mail />, label: "Contato", href: "#contato" },
+  { label: "HOME", href: "#hero" },
+  { label: "PLANOS", href: "#planos" },
+  { label: "SOLUÇÕES", href: "#solucoes" },
+  { label: "CONTATO", href: "#contato" },
 ];
 
 export function MenuMobile() {
@@ -62,7 +62,6 @@ export function MenuMobile() {
             className="menu-item"
             onClick={handleLinkClick}
           >
-            {item.icon}
             {item.label}
           </a>
         ))}
