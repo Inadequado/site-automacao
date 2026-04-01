@@ -1,0 +1,128 @@
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza a logo */
+  height: 70px;
+}
+
+.mobile-logo {
+  padding-top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile-logo img {
+  height: 40px; /* ajuste conforme sua logo */
+  width: auto;
+}
+
+.hamburger {
+  -webkit-tap-highlight-color: transparent;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.8s ease;
+}
+
+.icon-visible {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.icon-hidden {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+/* Menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 12px 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mobile-menu.visible {
+  background: transparent;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.mobile-menu.closing {
+  visibility: visible;
+  pointer-events: none;
+}
+
+/* Itens */
+.menu-item {
+  -webkit-tap-highlight-color: transparent;
+  background: grey;
+  display: block;
+  padding: 14px 24px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+  margin: 4px 16px;
+  border-radius: 15px;
+
+  /* Estado inicial (antes de animar) */
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+/* Quando o menu abre, dispara a animação em cada item */
+.mobile-menu.visible .menu-item {
+  animation: slideDown 0.35s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação de fechar */
+.mobile-menu.closing .menu-item {
+  animation: slideUp 0.3s ease forwards !important;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+}

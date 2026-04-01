@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png";
 import { useEffect, useRef, useState } from "react";
+import { MenuMobile } from "./MenuMobile";
 
 export function Header() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -86,7 +87,9 @@ export function Header() {
           </div>
         </div>
       </div>
-      <div className="menu-mobile"></div>
+      <div className="menu-mobile">
+        <MenuMobile />
+      </div>
     </header>
   );
 }
