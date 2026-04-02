@@ -1,9 +1,9 @@
 import { Carrocel } from "./Demonstração/Carrocel";
 import { Validacao } from "./Demonstração/Validacao";
 
-export function Solucoes() {
+export function Demonstracao() {
   return (
-    <main id="solucoes">
+    <main id="demonstracao">
       <Carrocel />
       <Validacao />
     </main>

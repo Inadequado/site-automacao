@@ -1,7 +1,7 @@
 import { Header } from "./components/Header";
 import { Hero } from "./sections/Hero";
 import { Planos } from "./sections/Planos";
-import { Solucoes } from "./sections/Solucoes";
+import { Demonstracao } from "./sections/Demonstracao";
 
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Solucoes />
+        <Demonstracao />
         <Planos />
       </main>
     </>
