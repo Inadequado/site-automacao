@@ -54,6 +54,7 @@
 
 @media (max-width: 768px) {
   .iconsSection {
+    transform: scale(0.9);
     display: grid;
     gap: 50px;
   }
