@@ -19,11 +19,13 @@ const titulo: Word[] = [
 const GlassButton: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <button className="glass-btn">
-      <div className="glow-ring" />
-      <div className="glass-fill" />
-      <div className="border-ring" />
-      <div className="border-gloss" />
-      <span>{children}</span>
+      <a href="#demonstracao">
+        <div className="glow-ring" />
+        <div className="glass-fill" />
+        <div className="border-ring" />
+        <div className="border-gloss" />
+        <span>{children}</span>
+      </a>
     </button>
   );
 };

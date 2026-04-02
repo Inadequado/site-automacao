@@ -34,17 +34,23 @@ export function Validacao() {
   }, [isInView]);
 
   return (
-    <section ref={sectionRef} className={styles.videoSection}>
-      <div className={styles.videoWrapper}>
-        <video
-          ref={videoRef}
-          src={validVideo}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        ></video>
+    <section>
+      <div className={styles.title}>
+        <h1>Fluxo direto, sem etapas desnecessárias.</h1>
+        <h2>Uma experiência prática com menos dúvidas e mais clareza.</h2>
+      </div>
+      <div ref={sectionRef} className={styles.videoSection}>
+        <div className={styles.videoWrapper}>
+          <video
+            ref={videoRef}
+            src={validVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+          ></video>
+        </div>
       </div>
     </section>
   );

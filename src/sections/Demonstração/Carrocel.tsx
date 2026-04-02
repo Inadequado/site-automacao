@@ -119,7 +119,7 @@ export function Carrocel() {
     <section id="demonstracao">
       <div className={styles.titleCarousel}>
         <h1>A fórmula certa com processo inteligente</h1>
-        <p>tudo flui, tudo se encaixa.</p>
+        <h2>Tudo flui, tudo se encaixa.</h2>
       </div>
       {/* PRIMEIRA LINHA */}
       <div className={styles.embla}>
@@ -130,14 +130,14 @@ export function Carrocel() {
                 {item.type === "smile" ? (
                   <div className={styles.textBox1}>
                     <div className={styles.icon1}>
-                      <img src={item.icon} width={50} alt={item.alt} />
+                      <img src={item.icon} width={65} alt={item.alt} />
                     </div>
                     <div className={styles.texto1}>{item.text}</div>
                   </div>
                 ) : (
                   <div className={styles.textBox2}>
                     <div className={styles.icon}>
-                      <img src={item.icon} width={50} alt={item.alt} />
+                      <img src={item.icon} width={65} alt={item.alt} />
                     </div>
                     <div className={styles.texto1}>{item.text}</div>
                   </div>
@@ -156,14 +156,14 @@ export function Carrocel() {
                 {item.type === "smile" ? (
                   <div className={styles.textBox1}>
                     <div className={styles.icon1}>
-                      <img src={item.icon} width={50} alt={item.alt} />
+                      <img src={item.icon} width={65} alt={item.alt} />
                     </div>
                     <div className={styles.texto1}>{item.text}</div>
                   </div>
                 ) : (
                   <div className={styles.textBox2}>
                     <div className={styles.icon}>
-                      <img src={item.icon} width={50} alt={item.alt} />
+                      <img src={item.icon} width={65} alt={item.alt} />
                     </div>
                     <div className={styles.texto1}>{item.text}</div>
                   </div>
