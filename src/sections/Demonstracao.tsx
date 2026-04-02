@@ -3,9 +3,9 @@ import { Validacao } from "./Demonstração/Validacao";
 
 export function Demonstracao() {
   return (
-    <main id="demonstracao">
+    <section id="demonstracao">
       <Carrocel />
       <Validacao />
-    </main>
+    </section>
   );
 }
