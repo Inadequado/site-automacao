@@ -51,7 +51,7 @@ export function Hero() {
             className="main-text"
             initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.2 }}
           >
             <h1 className="hero-titulo">
               {titulo.map((word, index) =>
@@ -64,8 +64,8 @@ export function Hero() {
                     initial={{ opacity: 0, y: 18 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{
-                      delay: index * 0.25,
-                      duration: 0.9,
+                      delay: index * 0.15,
+                      duration: 0.3,
                     }}
                   >
                     {word as string}
@@ -77,7 +77,7 @@ export function Hero() {
               className="hero-description"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.3, duration: 0.5 }}
+              transition={{ delay: 0.9, duration: 0.5 }}
             >
               A IA que responde, tira dúvidas e agenda horários <br></br> sem
               você ficar preso no celular.
@@ -86,7 +86,7 @@ export function Hero() {
               className="div-btn"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2, duration: 0.5 }}
+              transition={{ delay: 1.2, duration: 0.5 }}
             >
               <GlassButton>VER DEMONSTRAÇÃO</GlassButton>
             </motion.div>
@@ -97,7 +97,7 @@ export function Hero() {
                 className="reveal"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2.2, duration: 0.5 }}
+                transition={{ delay: 1.5, duration: 0.5 }}
               >
                 <img src={phone1} className="phone1" />
               </motion.div>
@@ -107,7 +107,7 @@ export function Hero() {
                 className="reveal delay-1"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2.4, duration: 0.5 }}
+                transition={{ delay: 1.8, duration: 0.5 }}
               >
                 <img src={phone2} className="phone2" />
               </motion.div>
@@ -117,7 +117,7 @@ export function Hero() {
                 className="reveal delay-2"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 2.6, duration: 0.5 }}
+                transition={{ delay: 2.1, duration: 0.5 }}
               >
                 <img src={bubble} className="bubble" />
               </motion.div>

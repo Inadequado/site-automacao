@@ -429,8 +429,9 @@ a {
   }
 
   .main-text h2 {
+    text-align: center;
     padding-top: 2vh;
-    font-size: 3.8vw;
+    font-size: 3.7vw;
   }
 
   .hero-scrolled h1 {
@@ -438,8 +439,9 @@ a {
   }
 
   .hero-scrolled h2 {
+    text-align: center;
     padding-top: 2vh;
-    font-size: 3.8vw;
+    font-size: 3.7vw;
   }
 
   .glass-btn {
